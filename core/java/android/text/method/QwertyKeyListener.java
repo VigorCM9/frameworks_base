@@ -135,7 +135,7 @@ public class QwertyKeyListener extends BaseKeyListener {
             return true;
         }
 
-	if (i == KeyCharacterMap.DOT_WWW_INPUT || i == KeyCharacterMap.DOT_COM_INPUT) {
+        if (i == KeyCharacterMap.DOT_WWW_INPUT || i == KeyCharacterMap.DOT_COM_INPUT) {
             content.replace(selStart, selEnd, selStart == 0 ? "www." : ".com");
             adjustMetaAfterKeypress(content);
             return true;
